@@ -34,12 +34,33 @@ npm install bud-favicons --save-dev
 **bud-favicons** works with zero configuration. But there is a robust and developer friendly configuration API should you need to make a modification to the provided defaults.
 You can see the full list of options in the [favicons documentation](https://github.com/itgalaxy/favicons#usage).
 
-## Configuration with `bud.favicons`
+## Default configuration
+
+```ts
+const options = {
+  logo: bud.path('resources/images/favicon.svg'),
+  mode: 'webapp',
+  devMode: 'webapp',
+  outputPath: bud.path('public'),
+  favicons: {
+      icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          favicons: true,
+          windows: true,
+          yandex: false,
+      },
+  },
+};
+```
+
+## Configuration with `bud.favicons.config`
 
 You can configure `favicons` with the `bud.favicons` method:
 
 ```ts title=bud.config.ts
-bud.favicons({
+bud.favicons.config({
   logo: bud.path('resources/images/favicon.svg'),
 });
 ```
@@ -47,7 +68,7 @@ bud.favicons({
 OR
 
 ```ts title=bud.config.ts
-bud.favicons({
+bud.favicons.config({
   logo: bud.path('resources/images/favicon.svg'),
   mode: 'webapp',
   devMode: 'webapp',
