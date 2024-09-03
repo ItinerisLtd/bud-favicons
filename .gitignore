@@ -1,0 +1,6 @@
+**/*.log
+**/*.tsbuildinfo
+**/.yarn
+**/dist
+**/lib
+**/node_modules
