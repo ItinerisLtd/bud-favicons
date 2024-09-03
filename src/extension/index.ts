@@ -31,7 +31,7 @@ export default class BudFavicons extends Extension<
     }
 
     @bind
-    public config(options: BudFaviconsPublicOptions) : void {
+    public setup(options: BudFaviconsPublicOptions) : void {
         this.options = options
     }
 
