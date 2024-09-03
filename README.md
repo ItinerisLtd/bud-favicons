@@ -15,23 +15,36 @@
 
 ## Installation
 
-Install **bud-favicons** to your project.
+Install **@itinerisltd/bud-favicons** to your project.
 
 Yarn:
 
 ```sh
-yarn add bud-favicons --dev
+yarn add @itinerisltd/bud-favicons --dev
 ```
 
 npm:
 
 ```sh
-npm install bud-favicons --save-dev
+npm install @itinerisltd/bud-favicons --save-dev
 ```
 
 ## Configuration
 
-**bud-favicons** works with zero configuration. But there is a robust and developer friendly configuration API should you need to make a modification to the provided defaults.
+At the top of your `bud.config.ts` file, import the extension:
+
+```ts title=bud.config.ts
+import BudFavicons from "@itinerisltd/bud-favicons";
+```
+
+Then, add the extension to your Bud instance:
+
+```ts title=bud.config.ts
+bud
+    .use(BudFavicons);
+```
+
+**@itinerisltd/bud-favicons** works with zero configuration. But there is a robust and developer friendly configuration API should you need to make a modification to the provided defaults.
 You can see the full list of options in the [favicons documentation](https://github.com/itgalaxy/favicons#usage).
 
 ## Default configuration
@@ -55,9 +68,9 @@ const options = {
 };
 ```
 
-## Configuration with `bud.favicons.config`
+## Configuration with `bud.favicons.setup`
 
-You can configure `favicons` with the `bud.favicons` method:
+You can configure `favicons` with the `bud.favicons.setup` method:
 
 ```ts title=bud.config.ts
 bud.favicons.setup({

@@ -1,6 +1,6 @@
 {
-  "name": "bud-favicons",
-  "version": "0.0.15",
+  "name": "@itinerisltd/bud-favicons",
+  "version": "0.1.0",
   "description": "Bud.js extension to automatically generate favicons.",
   "main": "index.js",
   "license": "MIT",
@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/ItinerisLtd/bud-favicons.git",
     "directory": "sources/bud-favicons"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "bugs": "https://github.com/ItinerisLtd/bud-favicons/issues",
   "keywords": [
