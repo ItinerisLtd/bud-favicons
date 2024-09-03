@@ -35,9 +35,9 @@
       "@roots/bud-build",
       "@roots/bud-extensions",
       "@roots/bud-support",
-      "favicons-webpack-plugin",
+      "@roots/bud-api"
     ]
   },
-  "include": ["./src"],
+  "include": ["./src/**/*"],
   "exclude": ["test", "node_modules", "dist"]
 }

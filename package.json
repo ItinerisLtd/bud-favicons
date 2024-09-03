@@ -1,17 +1,8 @@
 {
   "name": "bud-favicons",
-  "version": "0.0.0",
+  "version": "0.0.15",
   "description": "Bud.js extension to automatically generate favicons.",
-  "engines": {
-    "node": ">=16"
-  },
-  "contributors": [
-    {
-      "email": "danlapteacru@gmail.com",
-      "name": "Dan Lapteacru",
-      "url": "https://github.com/danlapteacru"
-    }
-  ],
+  "main": "index.js",
   "license": "MIT",
   "homepage": "https://github.com/ItinerisLtd/bud-favicons",
   "repository": {
@@ -27,38 +18,44 @@
     "webpack-favicons",
     "favicons-webpack-plugin"
   ],
-  "files": [
-    "docs",
-    "lib",
-    "src"
+  "contributors": [
+    {
+      "email": "danlapteacru@gmail.com",
+      "name": "Dan Lapteacru",
+      "url": "https://github.com/danlapteacru"
+    }
   ],
   "type": "module",
   "exports": {
-    ".": "./lib/index.js"
+    ".": "./lib/index.js",
+    "./types": "./lib/types.js"
   },
   "typesVersions": {
     "*": {
       ".": [
-        "./lib/types/index.d.ts",
-        "./lib/index.d.ts"
+        "./lib/index.js"
+      ],
+      "types": [
+        "./lib/types.js"
       ]
     }
   },
   "types": "./lib/index.d.ts",
   "module": "./lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
   "devDependencies": {
-    "@types/node": "20.14.12"
-  },
-  "dependencies": {
     "@roots/bud": "^6.23.3",
     "@roots/bud-framework": "^6.23.3",
     "@roots/bud-support": "^6.23.3",
     "@roots/bud-typescript": "^6.23.3",
-    "favicons": "^7.2.0",
-    "favicons-webpack-plugin": "^6.0.1",
-    "tslib": "2.6.3"
+    "@types/node": "18.17.9",
+    "tslib": "2.6.2"
   },
-  "volta": {
-    "extends": "../../../package.json"
+  "dependencies": {
+    "favicons": "^7.1.4",
+    "favicons-webpack-plugin": "^6.0.1"
   }
 }
