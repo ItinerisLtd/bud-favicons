@@ -60,7 +60,7 @@ const options = {
 You can configure `favicons` with the `bud.favicons` method:
 
 ```ts title=bud.config.ts
-bud.favicons.config({
+bud.favicons.setup({
   logo: bud.path('resources/images/favicon.svg'),
 });
 ```
@@ -68,7 +68,7 @@ bud.favicons.config({
 OR
 
 ```ts title=bud.config.ts
-bud.favicons.config({
+bud.favicons.setup({
   logo: bud.path('resources/images/favicon.svg'),
   mode: 'webapp',
   devMode: 'webapp',
