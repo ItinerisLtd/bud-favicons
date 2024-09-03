@@ -1,6 +1,6 @@
 {
   "name": "bud-favicons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bud.js extension to automatically generate favicons.",
   "engines": {
     "node": ">=16"
