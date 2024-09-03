@@ -1,6 +1,8 @@
 /**
  * bud-favicons
  *
+ * @see https://bud.js.org
+ * @see https://github.com/roots/bud
  * @see https://github.com/ItinerisLtd/bud-favicons
  */
 
