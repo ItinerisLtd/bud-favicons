@@ -11,7 +11,7 @@
     "directory": "sources/bud-favicons"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "bugs": "https://github.com/ItinerisLtd/bud-favicons/issues",
   "keywords": [
